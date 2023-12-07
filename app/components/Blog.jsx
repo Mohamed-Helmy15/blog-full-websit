@@ -8,7 +8,7 @@ const Blog = (props) => {
   const [employer, setEmployer] = useState({});
   const [sections, setSections] = useState([]);
   const [user, setUser] = useState({});
-  const [free, setFree] = useState();
+  const [free, setFree] = useState(1);
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("currentUser")));
     axios
