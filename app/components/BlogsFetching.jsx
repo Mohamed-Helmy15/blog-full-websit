@@ -95,7 +95,24 @@ const BlogsFetching = () => {
                 !JSON.parse(
                   localStorage.getItem("currentUser")
                 ).freeBlogs.includes(blog.id) ? (
-                  <LockIcon />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      gap: "10px",
+                    }}
+                  >
+                    <LockIcon />
+                    <p
+                      style={{
+                        color: "#0755ff",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {blog.price}.00 EGP
+                    </p>
+                  </div>
                 ) : (
                   <p
                     style={{
