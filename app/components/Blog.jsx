@@ -12,7 +12,7 @@ const Blog = (props) => {
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("currentUser")));
     axios
-      .get(`https://blog-api-qjoh.onrender.com/api/v1/blogs/${props.id}`, {
+      .get(`https://helmy-blog-api.onrender.com/api/v1/blogs/${props.id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -67,7 +67,7 @@ const Blog = (props) => {
                 {section.image && (
                   <div className="image">
                     <img
-                      src={`https://blog-api-qjoh.onrender.com/img/sections/${section.image}`}
+                      src={`https://helmy-blog-api.onrender.com/img/sections/${section.image}`}
                       alt="image"
                       style={{ width: "90%", height: "400px" }}
                     />

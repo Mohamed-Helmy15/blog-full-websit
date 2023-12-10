@@ -21,7 +21,7 @@ const ForgotPassword = () => {
   const handleFormSubmit = async (values, onSubmitProps) => {
     axios
       .post(
-        "https://blog-api-qjoh.onrender.com/api/v1/users/forgot-password",
+        "https://helmy-blog-api.onrender.com/api/v1/users/forgot-password",
         values
       )
       .then((res) => {

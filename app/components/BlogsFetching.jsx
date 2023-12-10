@@ -13,7 +13,7 @@ const BlogsFetching = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     axios
-      .get("https://blog-api-qjoh.onrender.com/api/v1/blogs", {
+      .get("https://helmy-blog-api.onrender.com/api/v1/blogs", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

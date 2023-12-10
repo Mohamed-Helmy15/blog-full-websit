@@ -30,7 +30,7 @@ const Register = () => {
 
   const handleFormSubmit = async (values, onSubmitProps) => {
     axios
-      .post("https://blog-api-qjoh.onrender.com/api/v1/users/register", values)
+      .post("https://helmy-blog-api.onrender.com/api/v1/users/register", values)
       .then((res) => {
         setState("success");
         setMessage("The account has been created successfully!");

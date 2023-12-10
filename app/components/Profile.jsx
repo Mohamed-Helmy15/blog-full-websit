@@ -34,7 +34,7 @@ const Profile = () => {
   const handleFormSubmit = async (values, onSubmitProps) => {
     axios
       .patch(
-        `https://blog-api-qjoh.onrender.com/api/v1/users/${currUser._id}}`,
+        `https://helmy-blog-api.onrender.com/api/v1/users/${currUser._id}}`,
         values,
         {
           headers: {
@@ -77,7 +77,7 @@ const Profile = () => {
   const handlePasswordFormSubmit = async (values, onSubmitProps) => {
     axios
       .post(
-        `https://blog-api-qjoh.onrender.com/api/v1/users/update-password`,
+        `https://helmy-blog-api.onrender.com/api/v1/users/update-password`,
         values,
         {
           headers: {
@@ -108,7 +108,7 @@ const Profile = () => {
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("currentUser")));
     axios
-      .get("https://blog-api-qjoh.onrender.com/api/v1/blogs", {
+      .get("https://helmy-blog-api.onrender.com/api/v1/blogs", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -125,7 +125,7 @@ const Profile = () => {
       .catch((err) => console.log(err));
     axios
       .get(
-        `https://blog-api-qjoh.onrender.com/api/v1/users/${
+        `https://helmy-blog-api.onrender.com/api/v1/users/${
           JSON.parse(localStorage.getItem("currentUser"))._id
         }`,
         {

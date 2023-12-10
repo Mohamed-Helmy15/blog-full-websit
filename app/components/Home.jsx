@@ -30,7 +30,7 @@ export default function HomePage() {
   const handleFormSubmit = (values, onSubmitProps) => {
     setLoading(true);
     axios
-      .post("https://blog-api-qjoh.onrender.com/api/v1/users/login", values)
+      .post("https://helmy-blog-api.onrender.com/api/v1/users/login", values)
       .then((res) => {
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("currentUser", JSON.stringify(res.data.data.user));

@@ -25,7 +25,7 @@ const ResetPassword = ({ token }) => {
   const handleFormSubmit = async (values, onSubmitProps) => {
     axios
       .post(
-        `https://blog-api-qjoh.onrender.com/api/v1/users/reset-password/${token}`,
+        `https://helmy-blog-api.onrender.com/api/v1/users/reset-password/${token}`,
         values
       )
       .then((res) => {
