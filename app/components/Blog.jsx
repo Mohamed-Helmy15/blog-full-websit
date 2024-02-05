@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 import { styles } from "../globals.css";
+import img from "../server.png";
 const Blog = (props) => {
   const [blog, setBlog] = useState({});
   const [employer, setEmployer] = useState({});
@@ -67,7 +68,8 @@ const Blog = (props) => {
                 {section.image && (
                   <div className="image">
                     <img
-                      src={`https://helmy-blog-api.onrender.com/img/sections/${section.image}`}
+                      // src={`https://helmy-blog-api.onrender.com/img/sections/${section.image}`}
+                      src={img}
                       alt="image"
                       style={{ width: "90%", height: "400px" }}
                     />
